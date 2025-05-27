@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 export default function RiskMapPage() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [search, setSearch] = useState('La Paz, Iloilo City, Philippines');
+  const [search, setSearch] = useState('');
 
   return (
     <main className="risk-map-main">
@@ -144,9 +144,9 @@ export default function RiskMapPage() {
         .hamburger {
           width: 40px;
           height: 40px;
-          background: transparent;
+          background: #fff;
           border: none;
-          border-radius: 1.5rem;
+          border-radius: 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
