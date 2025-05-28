@@ -43,21 +43,21 @@ export default function AboutPage() {
             <img src="/profile.jpg" alt="Dev 1" className="w-24 h-24 rounded-full mb-3 border-4 border-[#b92727] object-cover" />
             <h3 className="text-xl font-bold text-[#b92727] text-center">Dhominick John Billena</h3>
             <p className="text-gray-700 text-sm mb-1">System Implementation</p>
-            <span className="text-xs text-gray-500">"Turning ideas into code!"</span>
+            <span className="text-xs text-gray-500 text-center">" Turns plans into buttons, code, and magic."</span>
           </div>
   
           <div className="bg-white w-56 rounded-2xl shadow p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300">
             <img src="/berg.png" alt="Dev 2" className="w-24 h-24 rounded-full mb-3 border-4 border-[#b92727] object-cover" />
             <h3 className="text-xl font-bold text-[#b92727] text-center">Mauricio Manuel Bergancia</h3>
             <p className="text-gray-700 text-sm mb-1">System Designer</p>
-            <span className="text-xs text-gray-500">"Designs with a smile!"</span>
+            <span className="text-xs text-gray-500 text-center">"Draws the map before anyone starts the journey."</span>
           </div>
       
           <div className="bg-white w-56 rounded-2xl shadow p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300">
             <img src="/cha.png" alt="Dev 3" className="w-24 h-24 rounded-full mb-3 border-4 border-[#b92727] object-cover" />
             <h3 className="text-xl font-bold text-[#b92727] text-center">Mherlie Joy Chavez</h3>
             <p className="text-gray-700 text-sm mb-1">Project Manager</p>
-            <span className="text-xs text-gray-500">"Loves clean code and coffee!"</span>
+            <span className="text-xs text-gray-500 text-center">"Schedules the chaos and makes it look easy."</span>
           </div>
         </div>
         
@@ -67,14 +67,14 @@ export default function AboutPage() {
             <img src="/cal.png" alt="Dev 4" className="w-24 h-24 rounded-full mb-3 border-4 border-[#b92727] object-cover" />
             <h3 className="text-xl font-bold text-[#b92727] text-center">Gillie Calanuga</h3>
             <p className="text-gray-700 text-sm mb-1">System Administrator</p>
-            <span className="text-xs text-gray-500">"Pixel perfect, every time!"</span>
+            <span className="text-xs text-gray-500 text-center">"Keeps the system alive, awake, and updated."</span>
           </div>
   
           <div className="bg-white w-56 rounded-2xl shadow p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300">
             <img src="/tua.jpg" alt="Dev 5" className="w-24 h-24 rounded-full mb-3 border-4 border-[#b92727] object-cover" />
             <h3 className="text-xl font-bold text-[#b92727] text-center">Michael Rey Tuando</h3>
             <p className="text-gray-700 text-sm mb-1">UI/UX Architect</p>
-            <span className="text-xs text-gray-500">"Finds patterns in the chaos!"</span>
+            <span className="text-xs text-gray-500 text-center">"Makes sure users smile, not squint. "</span>
           </div>
         </div>
       </section>
