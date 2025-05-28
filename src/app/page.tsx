@@ -1,4 +1,14 @@
 'use client';
+import { 
+ChartBarIcon, 
+GlobeIcon, 
+MapPinIcon, 
+UsersIcon,
+HouseIcon,
+ChartLineUpIcon,
+UsersFourIcon,
+InfoIcon
+} from '@phosphor-icons/react';
 
 export default function HomePage() {
   return (
@@ -27,41 +37,53 @@ export default function HomePage() {
       </section>
 
 
-      <section className="bg-[#dde1e4] py-15 px-4">
+      <section className="bg-[#dde1e4] py-15 px-4"> 
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 mt-6 text-[#2e2c2f]">
-            How <span className="text-[#b92727]">EMERGE</span> works
+        How <span className="text-[#b92727]">EMERGE</span> works
           </h2>
           <p className="text-center text-gray-700 mb-12">
-            A clustering-enhanced GIS workflow for hazard assessment and strategic resource allocation.
+        A clustering-enhanced GIS workflow for hazard assessment and strategic resource allocation.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div className="bg-gradient-to-b from-[#e94d58] to-[#e94d58]/80 rounded-2xl p-6 text-white shadow text-left h-90">
-              <h3 className="text-3xl font-bold mb-22">Analyze historical data</h3>
-              <p className="text-sm">
-                EMERGE uses historical records of floods, earthquakes, and landslides in{' '}
-                <span className="font-bold">Santa Barbara, Iloilo</span> to identify hazard-prone areas.
-              </p>
-            </div>
-            <div className="bg-gradient-to-b from-[#e94d58] to-[#e94d58]/80 rounded-2xl p-6 text-white shadow text-left">
-              <h3 className="text-3xl font-bold mb-21">Visualize Risk Zones with GIS</h3>
-              <p className="text-sm">
-                Hazards are plotted on an interactive GIS map, showing heat zones and vulnerability levels based on past data.
-              </p>
-            </div>
-            <div className="bg-gradient-to-b from-[#e94d58] to-[#e94d58]/80 rounded-2xl p-6 text-white shadow text-left">
-              <h3 className="text-3xl font-bold mb-12">Allocate Resources Using Clustering</h3>
-              <p className="text-sm">
-                Our system applies a clustering algorithm to suggest efficient responder and supply distribution based on
-                population density and risk severity.
-              </p>
-            </div>
-            <div className="bg-gradient-to-b from-[#e94d58] to-[#e94d58]/80 rounded-2xl p-6 text-white shadow text-left">
-              <h3 className="text-3xl font-bold mb-20">Support Planning and Readiness</h3>
-              <p className="text-sm">
-                EMERGE recommends optimal responder assignments and pre-positioning strategies for high-risk zones.
-              </p>
-            </div>
+        <div className="bg-gradient-to-b from-[#e94d58] to-[#e94d58]/80 rounded-2xl p-6 text-white shadow text-left">
+          <div className="flex items-center mb-4">
+            <MapPinIcon size={32} weight="bold" className="text-white" />
+          </div>
+          <h3 className="text-2xl font-bold mb-4">Identify Hazard Areas</h3>
+          <p className="text-sm">
+            EMERGE uses historical records of floods, earthquakes, and landslides in{' '}
+            <span className="font-bold">Santa Barbara, Iloilo</span> to identify hazard-prone areas.
+          </p>
+        </div>
+        <div className="bg-gradient-to-b from-[#e94d58] to-[#e94d58]/80 rounded-2xl p-6 text-white shadow text-left">
+          <div className="flex items-center mb-4">
+            <GlobeIcon size={32} weight="bold" className="text-white" />
+          </div>
+          <h3 className="text-2xl font-bold mb-4">Visualize Risk Zones</h3>
+          <p className="text-sm">
+            Hazards are plotted on an interactive GIS map, showing heat zones and vulnerability levels based on past data.
+          </p>
+        </div>
+        <div className="bg-gradient-to-b from-[#e94d58] to-[#e94d58]/80 rounded-2xl p-6 text-white shadow text-left">
+          <div className="flex items-center mb-4">
+            <UsersIcon size={32} weight="bold" className="text-white" />
+          </div>
+          <h3 className="text-2xl font-bold mb-4">Resource Clustering</h3>
+          <p className="text-sm">
+            Our system applies a clustering algorithm to suggest efficient responder and supply distribution based on
+            population density and risk severity.
+          </p>
+        </div>
+        <div className="bg-gradient-to-b from-[#e94d58] to-[#e94d58]/80 rounded-2xl p-6 text-white shadow text-left">
+          <div className="flex items-center mb-4">
+            <ChartBarIcon size={32} weight="bold" className="text-white" />
+          </div>
+          <h3 className="text-2xl font-bold mb-4">Strategic Planning</h3>
+          <p className="text-sm">
+            EMERGE recommends optimal responder assignments and pre-positioning strategies for high-risk zones.
+          </p>
+        </div>
           </div>
         </div>
       </section>
@@ -146,37 +168,6 @@ export default function HomePage() {
           </button>
         </div>
       </section>
-
-      <footer className="bg-[#2e2c2f] text-[#dde1e4] py-10 px-2 mt-0">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-0">
- 
-          <div className="flex flex-col items-start gap-4 min-w-[260px]">
-            <img src="/logo.svg" alt="EMERGE Logo" className="w-50 h-12 mb-2 ml-0" />
-            <span className="font-semibold italic text-lg leading-tight ml-8">
-              Emergency Responder Allocation<br />
-              System for
-              Hazard Mapping and Planning<br />
-            </span>
-          </div>
-   
-          <div className="flex flex-col items-start gap-2 min-w-[180px] md:ml-[-80]">
-            <span className="font-bold mb-1">EXPLORE</span>
-            <a href="/" className="hover:underline">Home</a>
-            <a href="/risk-map" className="hover:underline">Risk Map</a>
-            <a href="/hazard-visualization" className="hover:underline">Hazard Visualization</a>
-            <a href="/responder-allocation" className="hover:underline">Responder Allocation</a>
-            <a href="/about" className="hover:underline">About Us</a>
-          </div>
-
-          <div className="flex flex-col items-start gap-2 min-w-[220px] md:mr-[80] mt-[-68]">
-            <span className="font-bold mb-1">CONTACTS</span>
-            <span>Email: emerge.team@wvsu.edu.ph</span>
-            <span>Location: Iloilo City, Philippines</span>
-            <span>GitHub / Portfolio: github.me.com</span>
-          </div>
-        </div>
-        <div className="text-center text-[#dde1e4] mt-12 text-sm">EMERGE 2025</div>
-      </footer>
     </main>
   );
 }

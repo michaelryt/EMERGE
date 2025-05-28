@@ -32,45 +32,42 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
-
-
+      
       <section className="max-w-5xl w-full mb-16">
+        {/* {Temp titles lng tu guys, it's not industry standard. It was just based on what our roles are. Will be modifying this a abit} */}
         <h2 className="text-3xl font-bold text-center text-[#b92727] mb-8">Meet the Team</h2>
     
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center mb-8">
-          
-          <div className="bg-white w-56 rounded-2xl shadow p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8 w-full">
+
+          <div className="bg-white rounded-2xl shadow p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300">
             <img src="/profile.jpg" alt="Dev 1" className="w-24 h-24 rounded-full mb-3 border-4 border-[#b92727] object-cover" />
             <h3 className="text-xl font-bold text-[#b92727] text-center">Dhominick John Billena</h3>
-            <p className="text-gray-700 text-sm mb-1">System Implementation</p>
+            <p className="text-gray-700 text-sm mb-1">Project Leader</p>
             <span className="text-xs text-gray-500 text-center">" Turns plans into buttons, code, and magic."</span>
           </div>
-  
-          <div className="bg-white w-56 rounded-2xl shadow p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+        
+          <div className="bg-white rounded-2xl shadow p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300">
             <img src="/berg.png" alt="Dev 2" className="w-24 h-24 rounded-full mb-3 border-4 border-[#b92727] object-cover" />
             <h3 className="text-xl font-bold text-[#b92727] text-center">Mauricio Manuel Bergancia</h3>
-            <p className="text-gray-700 text-sm mb-1">System Designer</p>
+            <p className="text-gray-700 text-sm mb-1">System Architect</p>
             <span className="text-xs text-gray-500 text-center">"Draws the map before anyone starts the journey."</span>
           </div>
-      
-          <div className="bg-white w-56 rounded-2xl shadow p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+            
+          <div className="bg-white rounded-2xl shadow p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300">
             <img src="/cha.png" alt="Dev 3" className="w-24 h-24 rounded-full mb-3 border-4 border-[#b92727] object-cover" />
             <h3 className="text-xl font-bold text-[#b92727] text-center">Mherlie Joy Chavez</h3>
             <p className="text-gray-700 text-sm mb-1">Project Manager</p>
             <span className="text-xs text-gray-500 text-center">"Schedules the chaos and makes it look easy."</span>
           </div>
-        </div>
-        
-        <div className="flex flex-col md:flex-row justify-center gap-36">
-      
-          <div className="bg-white w-56 rounded-2xl shadow p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+
+          <div className="bg-white rounded-2xl shadow p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300">
             <img src="/cal.png" alt="Dev 4" className="w-24 h-24 rounded-full mb-3 border-4 border-[#b92727] object-cover" />
             <h3 className="text-xl font-bold text-[#b92727] text-center">Gillie Calanuga</h3>
-            <p className="text-gray-700 text-sm mb-1">System Administrator</p>
+            <p className="text-gray-700 text-sm mb-1">System Documentator</p>
             <span className="text-xs text-gray-500 text-center">"Keeps the system alive, awake, and updated."</span>
           </div>
-  
-          <div className="bg-white w-56 rounded-2xl shadow p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+        
+          <div className="bg-white rounded-2xl shadow p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300">
             <img src="/tua.jpg" alt="Dev 5" className="w-24 h-24 rounded-full mb-3 border-4 border-[#b92727] object-cover" />
             <h3 className="text-xl font-bold text-[#b92727] text-center">Michael Rey Tuando</h3>
             <p className="text-gray-700 text-sm mb-1">UI/UX Architect</p>

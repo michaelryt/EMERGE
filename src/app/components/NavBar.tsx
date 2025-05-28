@@ -9,8 +9,9 @@ export default function NavBar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
-    function handleClickOutside(e) {
-      if (!e.target.closest('.dropdown')) setMapsOpen(false);
+    function handleClickOutside(e: MouseEvent) {
+      const target = e.target as Element;
+      if (!target.closest('.dropdown')) setMapsOpen(false);
     }
     if (mapsOpen) document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
@@ -106,7 +107,7 @@ export default function NavBar() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/hazard-visualization" className="text-black hover:text-[#B92727]" onClick={() => { setMapsOpen(false); setMobileOpen(false); }}>
+                    <Link href="/hazard-visualization" className="text-black hover:text-[#B92727] text-center" onClick={() => { setMapsOpen(false); setMobileOpen(false); }}>
                       Hazard Visualization
                     </Link>
                   </li>
