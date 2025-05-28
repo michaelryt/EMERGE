@@ -5,11 +5,7 @@ import {
 ChartBarIcon, 
 GlobeIcon, 
 MapPinIcon, 
-UsersIcon,
-HouseIcon,
-ChartLineUpIcon,
-UsersFourIcon,
-InfoIcon
+UsersIcon
 } from '@phosphor-icons/react';
 
 export default function HomePage() {
