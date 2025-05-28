@@ -50,8 +50,8 @@ export default function HomePage() {
           </div>
           <h3 className="text-2xl font-bold mb-4">Identify Hazard Areas</h3>
           <p className="text-sm">
-            EMERGE uses historical records of floods, earthquakes, and landslides in{' '}
-            <span className="font-bold">Santa Barbara, Iloilo</span> to identify hazard-prone areas.
+            EMERGE uses historical records of floods, earthquakes, and landslides in{` `}
+            <span className="font-bold"> Santa Barbara, Iloilo</span> to identify hazard-prone areas.
           </p>
         </div>
         <div className="bg-gradient-to-b from-[#e94d58] to-[#e94d58]/80 rounded-2xl p-6 text-white shadow text-left">
