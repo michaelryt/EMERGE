@@ -9,15 +9,16 @@ export default function NavBar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
-    function handleClickOutside(e) {
-      if (!e.target.closest('.dropdown')) setMapsOpen(false);
+    function handleClickOutside(e: MouseEvent) {
+      const target = e.target as Element;
+      if (!target.closest('.dropdown')) setMapsOpen(false);
     }
     if (mapsOpen) document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [mapsOpen]);
 
   return (
-    <nav className="bg-[#faf5f5] px-6 py-2 flex items-center justify-between relative z-50 shadow">
+    <nav className="sticky top-0 bg-[#faf5f5] px-6 py-2 flex items-center justify-between z-50 shadow">
  
       <div className="flex items-center">
         <Link href="/"> <Image src="/logo.svg" alt="EMERGE Logo" width={35} height={35} /> </Link>
@@ -106,7 +107,7 @@ export default function NavBar() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/hazard-visualization" className="text-black hover:text-[#B92727]" onClick={() => { setMapsOpen(false); setMobileOpen(false); }}>
+                    <Link href="/hazard-visualization" className="text-black hover:text-[#B92727] text-center" onClick={() => { setMapsOpen(false); setMobileOpen(false); }}>
                       Hazard Visualization
                     </Link>
                   </li>

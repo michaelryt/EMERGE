@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function ResponderAllocationPage() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -26,7 +27,7 @@ export default function ResponderAllocationPage() {
   ];
 
   return (
-    <main className="relative h-[89vh] w-full overflow-hidden">
+    <main className="relative h-[100vh] w-full overflow-hidden">
       <div className="relative z-20 flex items-center p-4 gap-2 w-[380px] bg-transparent rounded-b-lg">
         <button className="w-10 h-10 bg-white border-none rounded-lg flex flex-col justify-center items-center gap-1.5 cursor-pointer" onClick={() => setSidebarOpen(!sidebarOpen)}>
           <span className="block w-6 h-0.5 bg-black rounded" />
@@ -48,7 +49,18 @@ export default function ResponderAllocationPage() {
       </div>
 
       {sidebarOpen && (
-        <aside className="fixed top-[130px] left-0 h-[calc(100vh-64px)] w-[380px] bg-[rgba(255,211,211,0.21)] shadow-lg p-4 z-15 overflow-y-auto">
+        <aside className="sticky top-[130px] left-0 h-[calc(100vh-64px)] w-[380px] bg-[rgba(255,211,211,1)] shadow-lg p-4 pb-10 z-15 overflow-y-auto rounded-2xl">
+          <div className="flex flex-row flex-wrap gap-4 mb-4">
+            <button className="flex items-center w-fit gap-2 bg-gray-100 border-none rounded-xl px-5 py-3 text-base font-medium shadow-md cursor-pointer transition-colors text-[#222] focus:outline-none active:bg-[#6ec6f7] [&.active]:bg-[#6ec6f7] [&.active]:text-[#222] active text-center">
+              <span className="text-xl">💧</span> Flood
+            </button>
+            <button className="flex items-center gap-2 bg-gray-100 border-none rounded-xl px-5 py-3 text-base font-medium shadow-md cursor-pointer transition-colors text-[#222] focus:outline-none w-fit">
+              <span className="text-xl">🏔️</span> Landslide
+            </button>
+            <button className="flex items-center gap-2 bg-gray-100 border-none rounded-xl px-5 py-3 text-base font-medium shadow-md cursor-pointer transition-colors text-[#222] focus:outline-none w-fit">
+              <span className="text-xl">🌋</span> Earthquake
+            </button>
+          </div>
           <div className="grid grid-cols-2 gap-x-4 gap-y-2 max-w-md w-full">
           
             <div className="col-span-2 flex bg-gray-500 rounded-2xl px-6 py-4 items-center justify-between text-white">
@@ -90,19 +102,10 @@ export default function ResponderAllocationPage() {
 
       <div className="fixed top-0 left-0 w-screen h-screen z-[-1] bg-white flex justify-center items-center pointer-events-none">
         <div className="w-[400px] h-[400px] bg-[#B92727] opacity-25 rounded-full z-10 absolute sm:w-[200px] sm:h-[200px]" />
-        <img src="/sampleimg.png" alt="Sample Map" className="w-screen h-screen object-cover" />
+        <Image src="/sampleimg.png" width={1920} height={1080} alt="Sample Map" className="w-screen h-screen object-cover" />
       </div>
 
       <div className="absolute top-8 right-8 flex flex-col items-end gap-8 z-20">
-        <div className="flex gap-4">
-          <button className="flex items-center gap-2 bg-gray-100 border-none rounded-full px-5 py-1 mt-[-16px] text-base font-medium shadow-md cursor-pointer transition-colors text-[#222] focus:outline-none active:bg-[#6ec6f7] [&.active]:bg-[#6ec6f7] [&.active]:text-[#222] active">
-            <span className="text-xl"></span> Flood
-          </button>
-          <button className="flex items-center gap-2 bg-gray-100 border-none rounded-full px-5 py-1 mt-[-16px] text-base font-medium shadow-md cursor-pointer transition-colors text-[#222] focus:outline-none">Landslide</button>
-          <button className="flex items-center gap-2 bg-gray-100 border-none rounded-full px-5 py-1 mt-[-16px] text-base font-medium shadow-md cursor-pointer transition-colors text-[#222] focus:outline-none">
-            <span className="text-xl"></span> Earthquake
-          </button>
-        </div>
         <div className="flex flex-col items-center gap-3">
           <button className="bg-white p-2 border-none rounded-2xl shadow-md w-10 h-10 text-xl flex items-center justify-center mt-70 mb-2 cursor-pointer transition-colors" id="maponly-btn" title="My Location">📍</button>
           <div className="flex flex-col gap-1 text-black">
@@ -110,7 +113,8 @@ export default function ResponderAllocationPage() {
             <button className="bg-white p-2 border-none rounded-2xl shadow-md w-10 h-10 text-xl flex items-center justify-center cursor-pointer transition-colors" title="Zoom Out">−</button>
           </div>
         </div>
-        <div className="flex items-center gap-3 mt-[-16px] mr-16 text-white drop-shadow">
+        <div className="fixed bottom right-8 flex items-center gap-3 text-white drop-shadow bg-[#1f1f1f] p-5 rounded-2xl z-20">
+          Legend: 
           <span className="inline-block w-8 h-7 rounded bg-[#2ee94d] mr-1" /> Low
           <span className="inline-block w-8 h-7 rounded bg-[#ffe94d] mr-1" /> Med
           <span className="inline-block w-8 h-7 rounded bg-[#f44336] mr-1" /> High

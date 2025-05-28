@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function HazardViusalizationPage() {
@@ -24,10 +25,11 @@ export default function HazardViusalizationPage() {
 
       <div className="hazard-map-area">
         <div className="hazard-map-circle" />
-        <img
+        <Image
           src="/sampleimg.png"
           alt="Sample Map"
-          style={{ width: '100vw', height: '100vh', objectFit: 'cover' }}
+          width={1920}
+          height={1080}
         />
       </div>
 
