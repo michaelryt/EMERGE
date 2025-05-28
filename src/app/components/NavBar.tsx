@@ -18,7 +18,7 @@ export default function NavBar() {
   }, [mapsOpen]);
 
   return (
-    <nav className="bg-[#faf5f5] px-6 py-2 flex items-center justify-between relative z-50 shadow">
+    <nav className="sticky top-0 bg-[#faf5f5] px-6 py-2 flex items-center justify-between z-50 shadow">
  
       <div className="flex items-center">
         <Link href="/"> <Image src="/logo.svg" alt="EMERGE Logo" width={35} height={35} /> </Link>

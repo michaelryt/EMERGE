@@ -24,7 +24,7 @@ export default function HazardViusalizationPage() {
 
       <div className="hazard-map-area">
         <div className="hazard-map-circle" />
-        <img
+        <Image
           src="/sampleimg.png"
           alt="Sample Map"
           style={{ width: '100vw', height: '100vh', objectFit: 'cover' }}

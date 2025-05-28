@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function RiskMapPage() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -65,7 +66,7 @@ export default function RiskMapPage() {
 
       <div className="risk-map-area">
         <div className="risk-map-circle" />
-        <img src="/sampleimg.png" alt="Sample Map" style={{ width: '100vw', height: '100vh', objectFit: 'cover' }} />
+        <Image src="/sampleimg.png" alt="Sample Map" width={100} height={100} />
       </div>
 
       <div className="risk-map-controls">

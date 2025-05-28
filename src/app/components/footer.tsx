@@ -1,3 +1,4 @@
+import Image from "next/image"
 
 export default function Footer(){
     return(
@@ -5,7 +6,7 @@ export default function Footer(){
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-start gap-10 md:gap-4">
             {/* Logo and Tagline Section */}
             <div className="flex flex-col items-start gap-4 min-w-[260px]">
-                <img src="/logo.svg" alt="EMERGE Logo" className="w-52 h-12 mb-3 transition-transform hover:scale-105" />
+                <Image src="/logo.svg" alt="EMERGE Logo" width={100} height={100} className="w-52 h-12 mb-3 transition-transform hover:scale-105" />
                 <span className="font-semibold italic text-lg leading-relaxed text-[#f0f2f4] ml-4">
                     Emergency Responder Allocation<br />
                     System for<br />
