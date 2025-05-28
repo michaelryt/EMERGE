@@ -1,12 +1,13 @@
 import React from "react";
-import { default as Image } from "next/image";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#f5f6fa] flex flex-col items-center py-12 px-4">
  
       <section className="max-w-4xl w-full text-center mb-12">
-        <Image src="/logo.svg" alt="EMERGE Logo" className="mx-auto w-16 h-16 mb-8 animate-bounce" />
+        <Image src="/logo.svg" width={100} height={100} alt="EMERGE Logo" className="mx-auto w-16 h-16 mb-8 animate-bounce" />
         <h1 className="text-4xl md:text-5xl font-extrabold text-[#b92727] mb-6">About EMERGE</h1>
         <p className="text-lg text-gray-700 mb-4">
           <span className="font-semibold text-[#b92727]">EMERGE</span> is an undergraduate thesis project that enhances emergency response team allocation and prepositioning. It combines a Risk-based Emergency Modelling Algorithm (REM) and a Resource Allocation Method (RAM) with Geographic Information Systems (GIS) for hazard visualization. 
@@ -85,9 +86,9 @@ export default function AboutPage() {
 
       <section className="max-w-3xl w-full text-center mt-12 mb-10">
         <h2 className="text-2xl font-bold text-[#b92727] mb-2">Contact Us</h2>
-        <p className="text-gray-700 mb-2">Email: <a href="mailto:emerge.team@wvsu.edu.ph" className="text-[#b92727] underline">emerge.team@wvsu.edu.ph</a></p>
+        <p className="text-gray-700 mb-2">Email: <Link href="mailto:emerge.team@wvsu.edu.ph" className="text-[#b92727] underline">emerge.team@wvsu.edu.ph</Link></p>
         <p className="text-gray-700 mb-2">Location: Iloilo City, Philippines</p>
-        <p className="text-gray-700 mb-2">GitHub / Portfolio: <a href="https://github.me.com" className="text-[#b92727] underline">github.me.com</a></p>
+        <p className="text-gray-700 mb-2">GitHub / Portfolio: <Link href="https://github.me.com" className="text-[#b92727] underline">github.me.com</Link></p>
         <p className="text-gray-500 mt-4">Thank you for supporting our mission to make Santa Barbara safer and more resilient! <span className="text-2xl">💖</span></p>
       </section>
     </main>

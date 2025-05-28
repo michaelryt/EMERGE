@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Footer(){
     return(
@@ -17,11 +18,11 @@ export default function Footer(){
             {/* Navigation Links Section */}
             <div className="flex flex-col items-start gap-3 min-w-[180px]">
                 <span className="font-bold text-xl mb-2 text-[#f0f2f4]">EXPLORE</span>
-                <a href="/" className="hover:text-white hover:translate-x-1 transition-all duration-200">Home</a>
-                <a href="/risk-map" className="hover:text-white hover:translate-x-1 transition-all duration-200">Risk Map</a>
-                <a href="/hazard-visualization" className="hover:text-white hover:translate-x-1 transition-all duration-200">Hazard Visualization</a>
-                <a href="/responder-allocation" className="hover:text-white hover:translate-x-1 transition-all duration-200">Responder Allocation</a>
-                <a href="/about" className="hover:text-white hover:translate-x-1 transition-all duration-200">About Us</a>
+                <Link href="/" className="hover:text-white hover:translate-x-1 transition-all duration-200">Home</Link>
+                <Link href="/risk-map" className="hover:text-white hover:translate-x-1 transition-all duration-200">Risk Map</Link>
+                <Link href="/hazard-visualization" className="hover:text-white hover:translate-x-1 transition-all duration-200">Hazard Visualization</Link>
+                <Link href="/responder-allocation" className="hover:text-white hover:translate-x-1 transition-all duration-200">Responder Allocation</Link>
+                <Link href="/about" className="hover:text-white hover:translate-x-1 transition-all duration-200">About Us</Link>
             </div>
 
             {/* Contact Information Section */}
